@@ -61,7 +61,7 @@ main {
     flex-direction: column;
 }
 
-.conteinerRecomendados h2 {
+section h2 {
     text-align: center;
 }
 
@@ -167,6 +167,10 @@ fieldset {
         object-fit: cover;
         background-position: bottom;
     }
+   .footer{
+    display: flex;
+    justify-content: space-between;
+   }
 
 }
 
@@ -184,6 +188,7 @@ fieldset {
     }
     .header h1{
         text-align: center;
+        font-size: 45px;
     }
     .conteinerRecomendados{
         display: flex;
@@ -200,5 +205,11 @@ fieldset {
         display: flex;
         flex-direction: column;
         height: 200px;
+        gap: 0.5rem;
+    }
+    .conteinder_list_tabla{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
