@@ -1,0 +1,201 @@
+:root {
+    --color1: #3F51B5;
+    --color2: rgb(197, 195, 230);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    text-shadow: 4px 4px 7px var(--color1);
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid var(--color1);
+    border-top: 2px solid var(--color1);
+}
+
+.nav-bar a {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 0px var(--color1);
+}
+
+.logo {
+    width: 100px;
+}
+
+/* MAIN */
+main {
+    background-image: url(../assests/Imagenes/fondo.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 24.5px;
+
+}
+
+.conteinerRecomendados {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conteinerRecomendados h2 {
+    text-align: center;
+
+}
+
+.contenedor_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cards {
+    background-color: var(--color2);
+    width: 170px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.cards img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+
+}
+
+.cards h3 {
+    text-align: center;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.conteinder_list_tabla {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+
+}
+
+.contenedor2 h2 {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.lista,
+.tablas {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    background-color: var(--color2);
+    border: 1px solid black;
+    list-style-position: inside;
+}
+
+.lista {
+    padding: 15px;
+}
+
+.tablas {
+    padding: 5px;
+}
+
+table {
+    background-color: white;
+}
+
+table,
+td,
+tr {
+    text-align: center;
+    border-collapse: collapse;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+.titulosTablas td {
+    font-weight: 300px;
+}
+
+/* FOOTER */
+
+.footer {
+
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+
+fieldset {
+    padding: 8px;
+}
+@media screen and (max-width: 1024px){
+    main{
+        background-image: url(../assests/Imagenes/fondo.webp);
+        object-fit: cover;
+        background-position: bottom;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    main{
+        background-image: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header h1{
+        text-align: center;
+    }
+    .conteinerRecomendados{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+       
+    }
+    .contenedor_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+}
